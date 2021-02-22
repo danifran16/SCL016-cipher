@@ -1,0 +1,36 @@
+/*pantalla 1*/
+html {
+ background: #F8C9c3 no-repeat center fixed;
+ background-image: linear-gradient(to bottom right, #ffffff, #f8c9c3);
+ text-align: center;
+ font-size: 500%;
+
+
+}
+
+h1 {
+ color: rgb(37, 47, 73);
+ font-size: 1.125em; /* 40px/16=2.5em */
+ }
+
+#boton {
+ color:#ECF8F8;   
+ background-color:  #35415D; 
+ border-radius: 8px; 
+ font-size: 1.5em;
+ 
+}
+
+p{
+color: violet;
+font-family: arnold boecklin;
+font-size: 1em;
+}
+
+/* 
+#pagineOne{
+    display: none;
+} */
+
+
+/*comentario en css*/
