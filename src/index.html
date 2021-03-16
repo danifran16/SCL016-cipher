@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-<!--Primera pagina-->
-  <body>  
-   <div id="pagineOne" class="pagOne">
-     <h1 id="H1">DESCIFRA EL CODIGO SECRETO</h1>
-       <button onclick="siguiente" type="button" id="boton" title="Presioname"> 
-        GO 
-       </button>
-     <p>YOU CAN</p>
-     
-   </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!--Segunda pagina--> 
-   <div id="pagineTwo" class="pagTwo">
-     <form action="ingresar pagina donde se enviaran los datos">
-       <label for="ingresa tu codigo">Ingresa tu codigo</label> <!--Define una etiqueta para un elemento <input>-->
-     <input type="text"></input><!--Define un control de entrada-->
-     </form>
-   </div>  
-   
-     
-     
-         
-      
-   
-   
-   <script src="index.js" type="module"></script>
-  </body>
+<body>
+  <header>
+    <h1></h1>
+    barra encabezado
+
+  </header>
+
+
+  <!--Primera pagina-->
+  <section id="pagineOne" class="pagOne">
+
+    <h4>DESCIFRA EL CODIGO SECRETO</h4>
+    <button id="siguiente" type="button" class="boton" title="Presioname">
+      GO
+    </button>
+    <p>YOU CAN</p>
+
+    <section>¿quieres enviar tu propio mensaje secreto?</section>
+  </section>
+
+  <!--Segunda pagina-->
+  <section id="pagineTwo" class="pagTwo">
+    <form action="">
+      <label for="ingresarCodigo">Ingresa tu codigo</label>
+      <input id="ingresarCodigo" name="ingresarCodigo" type="text" required />
+
+      <label for="ingresarNumero"> Ingresa el desplazamiento</label>
+      <input id="ingresarNumero" name="ingresarNumero" type="number" min="0" max="5" />
+
+      <button id="botCif" type="button">cifrar</button>
+
+      <label for="resultado">tu mensaje es</label>
+      <input id="resultado" name="resultado" type="text" readonly="readonly" />
+      <h2>tu mensaje es</h2>
+      <p id="resultadoText"></p>
+
+    </form>
+
+  </section>
+
+  <!--tercera pagina-->
+  <section id="pagineThree" class="pagThree">
+
+    <form>
+      <label class="cajita" for="ingresa tu codigo">Ingresa el codigo</label>
+      <input type="text"></input>
+      <label class="" for="ingresa tu codigo">Ingresa el desplazamiento</label>
+      <input type="number"></input>
+      <label class="" for="ingresa tu codigo">cifrar</label>
+      <input type="button"></input>
+    </form>
+
+
+  </section>
+
+
+  <footer>
+    pie de pagina
+  </footer>
+
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
