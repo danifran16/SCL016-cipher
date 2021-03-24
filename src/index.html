@@ -9,63 +9,74 @@
 </head>
 
 <body>
-  <header>
+  <!-- <header>
     <h1></h1>
     barra encabezado
-
-  </header>
+  </header> -->
 
 
   <!--Primera pagina-->
   <section id="pagineOne" class="pagOne">
-
     <h4>DESCIFRA EL CODIGO SECRETO</h4>
     <button id="siguiente" type="button" class="boton" title="Presioname">
       GO
     </button>
     <p>YOU CAN</p>
-
-    <section>¿quieres enviar tu propio mensaje secreto?</section>
   </section>
 
   <!--Segunda pagina-->
   <section id="pagineTwo" class="pagTwo">
-    <form action="">
+    <form>
       <label for="ingresarCodigo">Ingresa tu codigo</label>
       <input id="ingresarCodigo" name="ingresarCodigo" type="text" required />
 
       <label for="ingresarNumero"> Ingresa el desplazamiento</label>
-      <input id="ingresarNumero" name="ingresarNumero" type="number" min="0" max="5" />
+      <input id="ingresarNumero" name="ingresarNumero" type="number"/>
 
-      <button id="botCif" type="button">cifrar</button>
+      <button id="botCif" class="bfun" type="button">cifrar</button>
 
       <label for="resultado">tu mensaje es</label>
-      <input id="resultado" name="resultado" type="text" readonly="readonly" />
-      <h2>tu mensaje es</h2>
-      <p id="resultadoText"></p>
-
+      <input  id="resultadoText"  name="resultado" type="text" readonly="readonly" />
+      <!-- <p id="resultadoText1"></p> funciona con innerHTML -->
     </form>
+    
+    <section >
+       <button id="btnN1" class="next" type="button"> next </button>  
+       <button id="back1" class="back" type="button"> back </button>
+    </section>
+    
 
   </section>
+
 
   <!--tercera pagina-->
   <section id="pagineThree" class="pagThree">
-
+    
     <form>
-      <label class="cajita" for="ingresa tu codigo">Ingresa el codigo</label>
-      <input type="text"></input>
-      <label class="" for="ingresa tu codigo">Ingresa el desplazamiento</label>
-      <input type="number"></input>
-      <label class="" for="ingresa tu codigo">cifrar</label>
-      <input type="button"></input>
+      <label for="ingresarCodigo">Ingresa tu codigo</label>
+      <input id="ingresarCodigo2" name="ingresarCodigo" type="text" required />
+
+      <label for="ingresarNumero"> Ingresa el desplazamiento</label>
+      <input id="ingresarNumero2" name="ingresarNumero" type="number"/>
+
+      <button id="botDesc" class="bfun" type="button">descifrar</button>
+
+      <label for="resultado">tu mensaje es</label>
+      <input  id="resultadoText2"  name="resultado" type="text" readonly="readonly" />
+      <!-- <p id="resultadoText"></p> funciona con innerHTML -->
     </form>
-
-
+    
+    <section >
+       <button id="btnN2" class="next" type="button"> next </button>  
+       <button id="back2" class="back" type="button"> back </button>
+    </section>
   </section>
 
 
+  
   <footer>
-    pie de pagina
+    <a href="">¿Quieres compartir tu codigo? </a>
+
   </footer>
 
 

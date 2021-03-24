@@ -1,5 +1,7 @@
-
-/*pantalla ingreso*/
+/* family-name - El nombre de la familia de fuentes, como  "times", "courier", "arial", etc. */
+/* generic-family - El nombre de la familia genérica , como "serif", "sans-serif", "cursive", "fantasy", "monospace". */
+ 
+/* PRIMERA PAGINA */
 body{
  background: #F8C9c3; 
  background-image: url('./image/portada1.png');
@@ -11,61 +13,152 @@ body{
  height: auto;
 }
 
-
 h4 {
  color: rgb(37, 47, 73);
- font-size: 40px; 
+ font-family: Georgia;
+ font-size: 5vw; /* vw: ancho responsivo */
+ font-size: 6vh;/* vh:altura responsivo  */
  text-align: center;
  display: block;
  margin-top: 80px ;
  margin-left: auto;
  margin-right: auto; 
  margin-bottom: 60px;
-
- 
  }
 
 button {
- color:#ECF8F8;   
- background-color:  #35415D; 
+ font-family: Times; /* tipo de texto */
+ font-size: 1vw;/* tamaño texto */
+ font-size: 6vh;
+ color:#ECF8F8; /* color del texto */  
  text-align: center;
+ background-color: #35415D; /* fondo */
  border-radius: 20px; 
- font-size: 40px;
- cursor: pointer;
+ border: 10px solid #60729C;/* width,style,color */
+ margin:auto; /* margen: top,right,bottom,left */
+ width: 30%; /*ancho, % en base al contenedor */
+ height: 100px; /* alto */
+ box-shadow: 5px 8px 8px grey;/* horizontal,vertical,desenfoque,color */
  display: block;
- margin-left: auto;
- margin-right: auto;
- width: 20%;
+ cursor: pointer;
 }
 
 p{
- color: violet;
- font-family: arnold boecklin;
- font-size: 60px;
+ color: rgb(241,126,132,1);
+ font-family: cursive;
+ font-size: 50px;
  text-align: center;
- margin-left: auto;
- margin-right: auto;
- margin-bottom: 80px;
+ margin: 50px auto; /* 50=top,bottom auto= right,left */ 
 }
-aside{
- color: rgb(53, 97, 243);
- font-family: arnold boecklin;
- font-size: 20px;
+
+/* SEGUNDA PAGINA */  
+.pagTwo{ /* selector por Class */
+ /* background-image: url('./image/fondo2.png'); */
+ /* background-repeat: no-repeat; */
+ /*  background-position: center; */
+ /* background-attachment: fixed; */
+ /* background-size: cover; */
+ background-color: #49577C;  
+ height: 100vh;
+
+}
+
+/* texto pag2 y pag3 */
+ label{ /* selector por elemento(etiqueta) */
+ color: #ECF8F8;
+ font-size:5vw;
+ font-size:5vh;
  text-align: center;
- margin-left: auto;
- margin-right: auto;
+ display: block;
+ }
+
+input/* [type=text] */{
+ background-color:#FFFFF1;
+ margin: 40px auto;/* margen: top,right y bottom,left */
+ display: block; 
+ border-radius: 70px; 
+ width: 40%;
+ height: 70px;
+ text-align: center;
+ font-size: 5vw;
+ font-size: 5vh; 
+ font-family: Garamond, serif;
+}
+
+input[type=number]{
+ /* background-color:#FFFFF1;
+ margin:auto;
+ display: block; */
+ width:10%;
+ height:40px;
+}
+
+
+
+/* TERCERA PAGINA */
+.pagThree{
+background-color: #E6BEAE;
+height: 100vh;
+
 
 }
 
-/* pantalla cifrado */
-.pagTwo{
- background-image: url('./image/fondo2.png');
- background-repeat: no-repeat;
- background-position: center;
- background-attachment: fixed;
- height: 500px;
- background-size: cover;
+
+.bfun{ /* selector por id */
+ color:#ECF8F8; /* color del texto */  
+ text-align: center;
+ background-color: #BFA4D4; /* fondo */
+ border: 10px solid #C9B5D9;/* width,style,color */  
+box-shadow: 5px 8px 8px rgb(76, 76, 78) ;
+
 }
 
 
+button.next{
+ display: inline;
+ float: right; 
+ background-color: #C4C4C4;
+ border:none;
+  box-shadow: none;
+  width: 25vw; 
+  height: 12vh;
+  margin-right: 10px;
 
+}
+   button.next:hover{
+    background-color: red;
+    transition-duration: 0.4s; 
+    }
+
+button.back{
+ display: inline;
+ float: left;  
+ background-color: #C4C4C4;
+ border:none;
+ box-shadow: none;
+ width: 25vw; 
+  height: 12vh;
+  margin-left: 10px;
+}
+   button.back:hover{
+   background-color: blue;
+   transition-duration: 0.4s; 
+   } 
+
+footer{
+       font-size: 5vw;
+       font-size: 3vh;
+       text-align: center;
+       color: rgb(169, 6, 184);
+   }
+
+   .pagOne{
+       display: block;
+     }
+   .pagTwo{
+       display: none;
+     }
+   .pagThree{
+       display: none;
+     }
+   
